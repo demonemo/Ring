@@ -1,2 +1,2 @@
 # Ring
-kristján Ómar
+Kristján Ómar Eggertsson
