@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="is">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="CSS grind">
+    <meta name="author" content="Kristján">
+    <link rel="stylesheet" href="css/base.css">
+    <title>Forsíða | Ring</title>
+    <link rel="icon" type="image/x-icon" href="images/favicon.ico">
+
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body id="top">
+  <nav class="topnav">
+    <a href="index.html" class="logo"><span class="icon-ring-logo" alt="ring"><span class="path1"></span><span class="path2"></span><span class="path3"></span><span class="path4"></span></span></a>
+    <input type="checkbox" id="toggle" class="inputmenu">
+    <label for="toggle" class="menulabel">☰</span></label>
+    <div class="topmenu">
+        <a href="index.html"><span class="icon-heim"></span>  Spurningaleikur</a>
+        <a href="um-okkur.html"><span class="icon-um-okkur"></span>  Um okkur</a>
+        <a href="lysing.html"><span class="icon-lysing"></span>  Vörur</a>
+        <a href="panta.html"><span class="icon-karfa"></span>  Panta</a>
+    </div>
+  </nav>
+  <main class="container">
+    <section>
+      <div>
+        <h2>Vörulýsing</h2>
+        <table>
+          <caption>Vörurnar okkar</caption>
+          <thead>
+              <tr class="toppur">
+                  <th scope="col">Mynd af vöru</th>
+                  <th scope="col">Nafn vöru</th>
+                  <th scope="col">Lýsing</th>
+                  <th scope="col">Verð</th>
+              </tr>
+          </thead>
+          <tbody>
+              <tr>
+                  <td scope="row" data-label="Mynd"><img src="/vinnugögn/Myndir/ring-doorbells-images-eu/ring-video-doorbell-plus/Product Images/Angle- Battery Video Doorbell Plus.jpg"></td>
+                  <td data-label="Nafn">Dyrabjalla</td>
+                  <td data-label="Lýsing">a</td>
+                  <td data-label="Verð">10.000kr</td>
+              </tr>
+              <tr>
+                  <td scope="row" data-label="Mynd"> </td>
+                  <td data-label="Nafn">Öryggismyndavél</td>
+                  <td data-label="Lýsing">a</td>
+                  <td data-label="Verð">15.000kr</td>
+              </tr>
+              <tr>
+                  <td scope="row" data-label="Mynd"> </td>
+                  <td data-label="Nafn">Viðvörunarkerfi</td>
+                  <td data-label="Lýsing">a</td>
+                  <td data-label="Verð">30.000kr</td>
+              </tr>
+              <tr>
+                  <td scope="row" data-label="Mynd"> </td>
+                  <td data-label="Nafn">Snjallljós</td>
+                  <td data-label="Lýsing">a</td>
+                  <td data-label="Verð">8.000kr</td>
+            </tr>
+          </tbody>
+          <!--tfoot>
+            <td  colspan="3">Hér eru ekki öll næringarefnin upp talin. <a href="https://fdc.nal.usda.gov/fdc-app.html#/food-details/168458/nutrients">Sjá nánari sundurliðun</a></td>
+          </tfoot-->
+        </table>
+      </div>
+    </section>
+  </main>
+  <footer>
+    <section class="footercentre container col-3">
+        <div>
+            <div class="upplysingar">
+                <span class="icon-tolvupostur footer-info"></span>
+                <p>ring@ring.com</p>
+            </div>
+            <div class="upplysingar" style="margin-top:1em">
+                <span class="icon-simi footer-info"></span>
+                <p>(311) 369-6846</p>
+            </div>
+        </div>
+        <div class="samfelagsmidlar">
+            <a href="#" style="border-color:rgb(29,155,240)"><span class="icon-twitter"></span></a>
+            <a href="#" style="border-color:rgb(32,116,244)"><span class="icon-facebook"></span></a>
+            <a href="#" class="instagram"><span class="icon-instagram"></span></a>
+            <a href="#" style="border-color:rgb(255,0,0)"><span class="icon-youtube"></span></a>
+        </div>
+        <div>
+            <span class="icon-ring-logo2 footerlogo" alt="ring"><span class="path1"></span><span class="path2"></span><span class="path3"></span><span class="path4"></span></span>
+        </div>
+    </section>
+  </footer>
+  <!--spjallform-->
+  <input type="checkbox" id="togl" class="spjall">
+  <label for="togl" class="button spjallbutt chat-icon"><span class="icon-spjall"></span></a></label>
+  <div class="chatbox">
+    <form action="#" method="dialog" class="contactform">
+        <fieldset>
+          <legend>Aðstoð</legend>
+          <p>Hvernig get ég aðstoðað?</p>
+          <p>Nafn: <input type="text" name="nafn" required> </p>
+          <p>Tölvupóstur: <input type="email" name="email" required> </p>
+          <textarea row="5" placeholder="Skrifaðu hér það sem þig langar að vita um" required></textarea>
+          <p><input type="submit" value="Senda skilaboð" for="togl"></p>
+        </fieldset>
+      </form>
+  </div>
+</body>
+</html>

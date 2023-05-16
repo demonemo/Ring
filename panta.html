@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="is">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="CSS grind">
+    <meta name="author" content="Kristján">
+    <link rel="stylesheet" href="css/base.css">
+    <title>Forsíða | Ring</title>
+    <link rel="icon" type="image/x-icon" href="images/favicon.ico">
+
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body id="top">
+  <nav class="topnav">
+    <a href="index.html" class="logo"><span class="icon-ring-logo" alt="ring"><span class="path1"></span><span class="path2"></span><span class="path3"></span><span class="path4"></span></span></a>
+    <input type="checkbox" id="toggle" class="inputmenu">
+    <label for="toggle" class="menulabel">☰</span></label>
+    <div class="topmenu">
+        <a href="index.html"><span class="icon-heim"></span>  Spurningaleikur</a>
+        <a href="um-okkur.html"><span class="icon-um-okkur"></span>  Um okkur</a>
+        <a href="lysing.html"><span class="icon-lysing"></span>  Vörur</a>
+        <a href="panta.html"><span class="icon-karfa"></span>  Panta</a>
+    </div>
+  </nav>
+  <main class="container">
+    <section class="col-2">
+        <div>
+            <h2>Vörukaup</h2>
+            <form action="#" method="get">
+                <fieldset class="order"><!--nota klasa til að geta haft aðra forma með öðru útliti - sjá css-->
+                    <legend><h3>Ring vörulínan</h3></legend> 
+                    <p><strong>Hér koma kaupskilamálar.</strong> Okkur hjá Ring&trade; er mikið í mun að viðskiptavinir okkar séu ánægðir með þá upplifun sem þeir fá þegar þeir versla hjá okkur. Eitt af því sem undirstrikar metnað okkar....</p>
+                    <hr>
+                    <div class="col-14">
+                        <p class="right">Nafn:</p>  
+                        <p><input type="text" 
+                                name="nafn" 
+                                placeholder="Full name" 
+                                required 
+                                title="Vinsamlegast skráið nafn"> <!--ATH! input hefur ekki lokunartag -->
+                        </p>
+                        <p class="right">Heimilisfang:</p>  
+                        <p><input type="text" 
+                                name="nafn" 
+                                placeholder="Full name" 
+                                required 
+                                title="Vinsamlegast skráið nafn"> <!--ATH! input hefur ekki lokunartag -->
+                        </p>
+                        <p class="right">Símanúmer:</p>
+                        <p><input  type="text" 
+                                name="sími" 
+                                placeholder="Only digits"
+                                title="Vinsamlegast skráið aðeins 7 tölustafi"
+                                required>         
+                        </p>    <!-- http://html5pattern.com/Phones "\d{3}(?:[\-\s]?)\d{4}" -->
+                        <p class="right">Tölvupóstur:</p> 
+                        <p><input  type="email" 
+                                name="tölvupóstur" 
+                                placeholder="Email address" 
+                                required>
+                        </p>
+                    </div><!-- end of col-14 -->
+                    <p></p>
+                    <section class="col-2">
+                        <p> Vöruval <select name="voruval">
+                        <option value="1">Dyrabjalla</option>
+                        <option value="2">Öryggismyndavél</option>
+                        <option value="3">Viðvörunarkerfi</option>
+                        <option value="4">Snjallljós</option>
+                        </select></p>
+                        <p>Fjöldi              </label> <input type="number" id="fjoldi">
+                        </p>
+                    </section>
+                    <p>Sendingarmáti: </p>
+                    <p>
+                        <input type="radio" name="kyn" value="Hann" id="Hann">
+                        <label for="Hann">Kem og sæki vöruna</label> |
+                        <input type="radio" name="kyn" value="Hún" id="Hún"> 
+                        <label for="Hún">Sendið til mín </label>              
+                    </p>
+                    <p>Hvert á að senda vöruna?: </p>
+                    <p><textarea rows="4" name="vorusending" placeholder="Annað heimilisfang en kaupandi"></textarea>
+                    </p>
+                    <p></p>
+                    <p><input type="checkbox" name="postlist" value="OK" id="plist"> 
+                        <label for="plist">Sendið mér póstlista með nýum vörutilboðum</label> 
+                    </p>
+                    <p class="center"><input type="submit" name="submit" value="Kaupa vöru"></p>
+                </fieldset>
+            </form>
+        </div>
+        <div>
+          <p>&nbsp;</p>
+          <h4>Við kappkostum að veita viðskiptavinum okkar framúrskarandi þjónustu,<br> bæði með stafrænum leiðum og í útibúum okkar um allt land.</h4>
+          <figure>
+            <img src="/vinnugögn/Myndir/kannski/Door View Cam 4.jpg" width="100%">
+          </figure>
+        </div>
+    </section>
+    <!--section class="container">
+        <div class="col-3">
+          <figure>
+            <img src="images/ab1.jpg">
+            <figcaption>Þang er góð uppspretta ýmissa næringarefna eins og A, C, E og K vítamín, fólat, joð, járn og kalsíum. Sum þang eru einnig rík af próteini, andoxunarefnum og omega-3 fitusýrum. Lítið af kaloríum er í AlgoBonus drykknum og hentar vel fyrir þá sem eru að leita að heilbrigðri þyngd.</figcaption>
+          </figure>
+          <figure>
+            <img src="images/ab2.jpg">
+            <figcaption>Þangið í Algobonus er sjálfbær fæðugjafi sem hægt er að rækta án þess að nota ferskvatn, áburð eða skordýraeitur. Þangvinnslan hefur lítil umhverfisáhrif, þar sem tekur ekki landrými og tekur ekki upp aðrar auðlindir.!</figcaption>
+          </figure>
+          <figure>
+            <img src="images/ab3.jpg">
+            <figcaption>Trefjaríkt: Í Algobonus er mikið af matartrefjum, sem geta hjálpað til við að stjórna meltingu og stuðla að seddutilfinningu. AlgoBonus er næringarrík og sjálfbær fæðugjafi sem getur verið dýrmætur hluti af hollu og fjölbreyttu fæði.</figcaption>
+          </figure>
+        </div>
+      </div>
+    </section-->
+  </main>
+  <footer>
+    <section class="footercentre container col-3">
+        <div>
+            <div class="upplysingar">
+                <span class="icon-tolvupostur footer-info"></span>
+                <p>ring@ring.com</p>
+            </div>
+            <div class="upplysingar" style="margin-top:1em">
+                <span class="icon-simi footer-info"></span>
+                <p>(311) 369-6846</p>
+            </div>
+        </div>
+        <div class="samfelagsmidlar">
+            <a href="#" style="border-color:rgb(29,155,240)"><span class="icon-twitter"></span></a>
+            <a href="#" style="border-color:rgb(32,116,244)"><span class="icon-facebook"></span></a>
+            <a href="#" class="instagram"><span class="icon-instagram"></span></a>
+            <a href="#" style="border-color:rgb(255,0,0)"><span class="icon-youtube"></span></a>
+        </div>
+        <div>
+            <span class="icon-ring-logo2 footerlogo" alt="ring"><span class="path1"></span><span class="path2"></span><span class="path3"></span><span class="path4"></span></span>
+        </div>
+    </section>
+  </footer>
+  <!--spjallform-->
+  <input type="checkbox" id="togl" class="spjall">
+  <label for="togl" class="button spjallbutt chat-icon"><span class="icon-spjall"></span></a></label>
+  <div class="chatbox">
+    <form action="#" method="dialog" class="contactform">
+        <fieldset>
+          <legend>Aðstoð</legend>
+          <p>Hvernig get ég aðstoðað?</p>
+          <p>Nafn: <input type="text" name="nafn" required> </p>
+          <p>Tölvupóstur: <input type="email" name="email" required> </p>
+          <textarea row="5" placeholder="Skrifaðu hér það sem þig langar að vita um" required></textarea>
+          <p><input type="submit" value="Senda skilaboð" for="togl"></p>
+        </fieldset>
+      </form>
+  </div>
+</body>
+</html>
